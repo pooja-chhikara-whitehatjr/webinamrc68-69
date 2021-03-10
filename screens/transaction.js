@@ -38,7 +38,7 @@ render(){
    if(this.state.buttonState=="clicked" && camPermission){
        return(
            <BarCodeScanner
-           onBarCodeScanned={this.state.scanned?undefined:this.handleBarCodeScanner()}
+           onBarCodeScanned={this.state.scanned?undefined:this.handleBarCodeScanner}
            style={StyleSheet.absoluteFillObject}
            />
        )
